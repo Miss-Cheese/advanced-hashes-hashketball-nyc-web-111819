@@ -165,8 +165,6 @@ def player_numbers(team_name)
   home_players = game_hash[:home][:players]
   away_players = game_hash[:away][:players]
 
-
-
   if game_hash[:home][:team_name] == team_name
      home_players.map {|player_data|
       player_data[:number]
@@ -176,5 +174,21 @@ def player_numbers(team_name)
       player_data[:number]
      }
   end
+end
 
+def player_stats(player_name)
+  home_players = game_hash[:home][:players]
+  away_players = game_hash[:away][:players]
+
+  home_players.each {|player|
+    if player[:player_name] == player_name
+      return player
+    end
+  }
+
+  away_players.each {|player|
+    if player[:player_name] == player_name
+      return player
+    end
+  }
 end
