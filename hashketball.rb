@@ -100,3 +100,6 @@
                  :blocks => 5,
                  :slam_dunks => 12}]}}
  end
+
+def num_points_scored
+end
