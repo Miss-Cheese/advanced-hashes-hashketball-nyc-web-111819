@@ -117,5 +117,24 @@ def num_points_scored(player_name)
       return player[:points]
     end
   }
+end
+
+
+def shoe_size(player_name)
+
+  home_players = game_hash[:home][:players]
+  away_players = game_hash[:away][:players]
+
+  home_players.each {|player|
+    if player[:player_name] == player_name
+      return player[:shoe]
+    end
+  }
+
+  away_players.each {|player|
+    if player[:player_name] == player_name
+      return player[:shoe]
+    end
+  }
 
 end
