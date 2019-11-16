@@ -150,5 +150,5 @@ def team_colors(team)
   else
      away_colors
   end
-  
+
 end
