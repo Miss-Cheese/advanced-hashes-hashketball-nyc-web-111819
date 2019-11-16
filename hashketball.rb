@@ -102,12 +102,9 @@
  end
 
 def num_points_scored(player_name)
-  # pp game_hash[:away][:players][4][:points]
-
 
   home_players = game_hash[:home][:players]
   away_players = game_hash[:away][:players]
-
 
   home_players.each {|player|
     if player[:player_name] == player_name
