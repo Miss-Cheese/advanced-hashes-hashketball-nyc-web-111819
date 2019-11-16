@@ -213,6 +213,6 @@ def big_shoe_rebounds
 
 
 
-  return biggest_shoe_player
+  return biggest_shoe_player[:rebounds]
 
 end
