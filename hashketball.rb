@@ -104,5 +104,5 @@
 def num_points_scored(player)
   pp game_hash[:away][:players][4][:points]
 
-  
+
 end
