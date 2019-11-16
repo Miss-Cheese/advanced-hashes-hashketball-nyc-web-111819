@@ -146,9 +146,9 @@ def team_colors(team)
   away_colors = game_hash[:away][:colors]
 
   if game_hash[:home][:team_name] == team
-    return home_colors
+     home_colors
   else
-    return away_colors
+     away_colors
   end
   
 end
