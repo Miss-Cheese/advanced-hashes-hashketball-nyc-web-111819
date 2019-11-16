@@ -215,14 +215,14 @@ def big_shoe_rebounds
   biggest_shoe_player = home_players[0]
 
   home_players.each {|player|
-    if player[:player_name] == player_name
-      return player[:points]
+    if player[:shoe] > biggest_shoe_player[:shoe]
+      biggest_shoe_player = player
     end
   }
 
   away_players.each {|player|
-    if player[:player_name] == player_name
-      return player[:points]
+    if player[:shoe] > biggest_shoe_player[:shoe]
+      biggest_shoe_player = player
     end
   }
 
