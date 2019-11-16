@@ -138,3 +138,10 @@ def shoe_size(player_name)
   }
 
 end
+
+
+def team_colors
+  game_hash[:home][:colors]
+  game_hash[:away][:colors]
+
+end
