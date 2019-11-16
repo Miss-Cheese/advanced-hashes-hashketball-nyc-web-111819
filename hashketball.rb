@@ -101,5 +101,6 @@
                  :slam_dunks => 12}]}}
  end
 
-def num_points_scored
+def num_points_scored(player)
+  pp game_hash
 end
