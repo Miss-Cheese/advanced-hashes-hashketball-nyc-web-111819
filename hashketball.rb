@@ -115,7 +115,7 @@ def num_points_scored(player_name)
     end
   }
 
-  awa_players.each {|player|
+  away_players.each {|player|
     if player[:player_name] == player_name
       return player[:points]
     end
