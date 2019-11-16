@@ -207,10 +207,24 @@ end
 
 
 def big_shoe_rebounds
-  biggest_shoe_player = nil
+  
 
 
+  home_players = game_hash[:home][:players]
+  away_players = game_hash[:away][:players]
+  biggest_shoe_player = home_players[0]
 
+  home_players.each {|player|
+    if player[:player_name] == player_name
+      return player[:points]
+    end
+  }
+
+  away_players.each {|player|
+    if player[:player_name] == player_name
+      return player[:points]
+    end
+  }
 
 
   return biggest_shoe_player[:rebounds]
