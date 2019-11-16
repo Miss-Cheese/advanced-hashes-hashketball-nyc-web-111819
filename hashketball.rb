@@ -207,7 +207,7 @@ end
 
 
 def big_shoe_rebounds
-  
+
 
 
   home_players = game_hash[:home][:players]
