@@ -179,16 +179,28 @@ end
 def player_stats(player_name)
   home_players = game_hash[:home][:players]
   away_players = game_hash[:away][:players]
+  my_player = nil
 
   home_players.each {|player|
     if player[:player_name] == player_name
-      return player
+      my_player = player
     end
   }
 
   away_players.each {|player|
     if player[:player_name] == player_name
-      return player
+      my_player = player
     end
   }
+
+  {
+            :number => my_player[:number],
+            :shoe => my_player[:shoe],
+            :points => my_player[:points],
+            :rebounds => my_player[:rebounds],
+            :assists => my_player[:assists],
+            :steals => my_player[:steals],
+            :blocks => my_player[:blocks],
+            :slam_dunks => my_player[:slam_dunks]}
+
 end
