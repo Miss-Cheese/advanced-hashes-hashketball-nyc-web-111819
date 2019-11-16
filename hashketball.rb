@@ -141,7 +141,8 @@ end
 
 
 def team_colors
-  game_hash[:home][:colors]
-  game_hash[:away][:colors]
+  home_colors = game_hash[:home][:colors]
+  away_colors = game_hash[:away][:colors]
+  
 
 end
