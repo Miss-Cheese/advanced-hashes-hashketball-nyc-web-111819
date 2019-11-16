@@ -160,3 +160,22 @@ def team_names
   team_name_array << game_hash[:away][:team_name]
   team_name_array
 end
+
+def player_numbers(team_name)
+  home_players = game_hash[:home][:players]
+  away_players = game_hash[:away][:players]
+
+
+
+  if game_hash[:home][:team_name] == team_name
+     home_players.map {|player_data|
+      player_data[:number]
+     }
+  else
+     away_players.map {|player_data|
+      player_data[:number]
+     }
+  end
+  
+end
+
